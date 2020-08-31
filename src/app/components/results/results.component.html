@@ -25,15 +25,16 @@
         {{ user.location }}
       </p>
       <div class="text-gray-900 text-xl mb-2">
-        username <span class="font-bold text-green-700">{{ user.login }}</span>
+        username
+        <span class="font-bold text-lg text-green-700">{{ user.login }}</span>
       </div>
-      <div class="text-gray-900 text-lg mb-2">
+      <div class="text-gray-900 text-lg my-2">
         Name
         <span class="font-bold text-sm text-green-700">{{ user.name }}</span>
       </div>
       <p class="text-gray-700 text-base">
         <span class="text-gray-900 text-lg mb-2">Bio {{ "" }}</span
-        >{{ user.bio }}
+        ><span class="italic">{{ user.bio }}</span>
       </p>
     </div>
     <div class="flex items-center">
