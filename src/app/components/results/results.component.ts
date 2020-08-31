@@ -28,7 +28,7 @@ username='jkitsao'
       this.user=data
       console.log(this.user)
   })
-  this.getuser.getRepos(this.username).subscribe(data=>{
+  this.getuser.getRepos(name).subscribe(data=>{
     this.repo=data
     console.log(this.repo)
   })
