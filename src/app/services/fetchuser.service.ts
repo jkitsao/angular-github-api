@@ -10,4 +10,7 @@ export class FetchuserService {
   getUser(username:string){
     return this.http.get(`https://api.github.com/users/${username}?access_token=${this.token}`)
   }
+  getRepos(username:string){
+    return this.http.get(`https://api.github.com/users/${username}/repos`)
+  }
 }

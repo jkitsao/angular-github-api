@@ -8,7 +8,7 @@ import {FetchuserService} from '../../services/fetchuser.service'
 })
 export class ResultsComponent implements OnInit {
 user:any
-repo:object
+repo:any
 username='jkitsao'
 
   constructor(private getuser:FetchuserService) { }
@@ -18,11 +18,20 @@ username='jkitsao'
       this.user=data
       console.log(this.user)
     })
+    this.getuser.getRepos(this.username).subscribe(data=>{
+      this.repo=data
+      console.log(this.repo)
+    })
   }
   handlesearch(name:string){
     this.getuser.getUser(name).subscribe(data=>{
       this.user=data
       console.log(this.user)
-  })}
+  })
+  this.getuser.getRepos(this.username).subscribe(data=>{
+    this.repo=data
+    console.log(this.repo)
+  })
+}
 
 }
