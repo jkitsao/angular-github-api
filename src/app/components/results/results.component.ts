@@ -9,13 +9,20 @@ import {FetchuserService} from '../../services/fetchuser.service'
 export class ResultsComponent implements OnInit {
 user:any
 repo:object
+username='jkitsao'
+
   constructor(private getuser:FetchuserService) { }
 
   ngOnInit(): void {
-    this.getuser.getUser().subscribe(data=>{
+    this.getuser.getUser(this.username).subscribe(data=>{
       this.user=data
       console.log(this.user)
     })
   }
+  handlesearch(name:string){
+    this.getuser.getUser(name).subscribe(data=>{
+      this.user=data
+      console.log(this.user)
+  })}
 
 }
