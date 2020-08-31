@@ -1,7 +1,9 @@
 <app-search (handlesearch)="handlesearch($event)"></app-search>
-<div class="max-w-lg w-full lg:max-w-full lg:flex shadow-xl rounded-lg">
+<div
+  class="max-w-xl lg:max-w-full lg:flex shadow-xl rounded-lg my-result relative"
+>
   <div
-    class="h-64 lg:h-auto lg:w-64 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+    class="h-full lg:h-auto lg:w-64 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
     title=""
   >
     <img src="{{ user.avatar_url }}" class="w-full h-full object-cover" />
@@ -20,7 +22,7 @@
             d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z"
           />
         </svg>
-        Members only
+        {{ user.location }}
       </p>
       <div class="text-gray-900 text-xl mb-2">
         username <span class="font-bold text-green-700">{{ user.login }}</span>
