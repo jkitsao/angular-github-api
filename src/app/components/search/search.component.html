@@ -1,11 +1,13 @@
 <div class="pt-2 relative text-gray-600 flex justify-center item-center">
   <div class="w-1/2 text-center mt-16">
-    <form>
+    <form (ngSubmit)="handlesubmit()">
       <input
         class="border-2 border-gray-400 w-1/2 rounded bg-white h-12 px-5 pr-16 text-sm focus:outline-none"
         type="search"
-        name="search"
+        name="username"
         placeholder="Search username or repo"
+        [(ngModel)]="username"
+        autocomplete="false"
       />
       <button
         type="submit"
