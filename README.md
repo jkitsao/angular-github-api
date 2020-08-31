@@ -1,27 +1,58 @@
-# Quotes
+<h1>Angular-quote-generator</h1>
+<img src='https://media.giphy.com/media/QNFhOolVeCzPQ2Mx85/giphy.gif' width=900 height=400 />
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.6.
+### Author [Jackson kitsao](https://github.com/jkitsao) Also follow me on [twitter](www.twitter.com/Jacksonkitsao5)
 
-## Development server
+#### Visit the site live [here](https://jkitsao.github.io/angular-quote-generator/)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+> an application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational.
 
-## Code scaffolding
+### Install
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#### Clone this repo
 
-## Build
+```
+git clone https://github.com/jkitsao/angular-quote-generator.git
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+#### Install dependencies
 
-## Running unit tests
+```
+npm install
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+or
 
-## Running end-to-end tests
+```
+yarn
+```
+### Build for production
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```bash
 
-## Further help
+ng build
+```
+### Usage
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+#### Run the app
+
+```
+ng serve -o
+```
+open your browser on localhost:4200
+
+## App Info
+
+### Author
+
+
+Jackson kitsao
+[Jackson kitsao](http://www.twitter.com/Jacksonkitsao5)
+
+### Version
+
+1.0.0
+
+### License
+
+This project is licensed under the MIT License
